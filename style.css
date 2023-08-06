@@ -1,0 +1,149 @@
+html{
+ height: 100%;
+ width: 100%;
+}
+body{
+   min-height: 98%;
+   display: flex;
+   flex-direction: column;
+   font-size: 18px;
+   font-family: 'Hanken Grotesk', sans-serif;;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+   
+}
+h1{
+    font-size: 1.1em;
+}
+#izquierda{
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 13.3em;
+    height: 19.44em;
+    color:rgba(255,255,255,0.5);
+    border-radius: 1.6em;
+    padding: 0.5em;
+    z-index: 1;
+}
+.Message{
+    font-size: 0.9em;
+}
+#numero{
+    margin: 0;
+    font-size: 2em;
+}
+p{
+    color: white;
+    font-size: 1.4em
+}
+#resultado{
+    width: 7.7em;
+    height: 7.7em;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+}
+aside{
+    display: flex;
+    flex-direction: column ;
+    border-radius: 0 1.6em 1.6em 0;
+    background-color: hsl(0, 1%, 100%);
+    transform: translate(-15px);
+    box-shadow: 0.1em 0.1em 1.38em hsla(224, 30%, 27%, 0.3);
+    width: 13.3em;
+    height: 19.44em;
+    padding: 0.5em;
+    z-index: 0.1;
+}
+#summary{
+    font-size: 1.1em;
+}
+img{
+    width: 1.1em;
+    height: 1.1em;
+}
+.summary{
+    display: flex;
+    font-size: 0.9em;
+    border-radius: 0.5em;
+    margin: auto;
+width: 11.1em;
+    padding: 0.2em;
+}
+.oscuro{
+    position:relative;
+    left: 1em;
+    color: black;
+}
+.gris{
+    position: relative;
+    left: 2em;
+    color: rgb(138, 138, 136);
+}
+#reaction{
+    background-color: hsla(0, 100%, 67%, 10%);
+    color: hsl(0, 100%, 67%);
+}
+#memory{
+    background-color: hsla(39, 100%, 56%, 10%);
+    color: hsl(39, 100%, 56%);
+}
+#verbal{
+    background-color: hsla(166, 100%, 37%,10%);
+    color: hsl(166, 100%, 37%);
+}
+#visual{
+    background-color: hsla(234, 85%, 45%,10%);
+    color: hsl(234, 85%, 45%);
+}
+button{
+    background: hsl(224, 30%, 27%);
+    margin: auto;
+    color: white;
+    font-size: 0.7em;
+    border-style: none;
+    width: 15em;
+    height: 2.5em;
+    border-radius: 1.5em;
+    cursor: pointer;
+    transition: background 2s ease;
+}
+button:hover{
+    background: linear-gradient( hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+footer{
+    display: flex;
+    margin: 2em;
+ justify-content: center;
+text-align: center;
+ 
+}
+@media only screen and (max-width:710px){
+    main{
+        flex-direction: column;
+    }
+    .izquierda{
+        width: 13.3em;
+    }
+    aside{
+        border-radius: 1.2em;
+        transform: translate(0,-0.27em);
+        width: 13.3em;
+    }
+}
+@media only screen and (max-width: 1000px){
+    body{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 385px){
+    body{
+        font-size: 15px;
+    }
+}
